@@ -46195,7 +46195,7 @@ amu(a){var s=0,r=A.u(t.z),q,p=this
 var $async$A0=A.v(function(b,c){if(b===1)return A.q(c,r)
 while(true)switch(s){case 0:p.z=a
 s=3
-return A.w(A.auU(A.e_("https://www.lizhi.fm/"+a),null),$async$A0)
+return A.w(A.auU(A.e_("https://cors-anywhere.herokuapp.com/corsdemo/https://www.lizhi.fm/"+a),null),$async$A0)
 case 3:q=p.a_0(c)
 s=1
 break
