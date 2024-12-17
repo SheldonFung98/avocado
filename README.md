@@ -1,4 +1,4 @@
 # Avocado
 
-Cross-platform audio hijack app
+A cross-platform audio hijack app
 
