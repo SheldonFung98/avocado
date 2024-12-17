@@ -69,13 +69,17 @@ class LycheeSearch extends SearchBase {
 
   fetchIDPage(String id) async {
     fmID = id;
-    final response = await http.get(Uri.parse('https://www.lizhi.fm/' + fmID));
+    final response = await http.get(Uri.parse(
+        'https://cors-anywhere.herokuapp.com/https://www.lizhi.fm/' + fmID));
     return getListFromPage(response);
   }
 
   fetchPage(String realID, int pageNum) async {
     final response = await http.get(Uri.parse(
-        'https://www.lizhi.fm/user/' + realID + '/p/' + pageNum.toString()));
+        'https://cors-anywhere.herokuapp.com/https://www.lizhi.fm/user/' +
+            realID +
+            '/p/' +
+            pageNum.toString()));
     return getListFromPage(response);
   }
 
